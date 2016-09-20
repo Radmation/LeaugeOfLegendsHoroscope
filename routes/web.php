@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/champions','ChampionController@getAll');
+Route::post('/champions','ChampionController@getAll');
+
+Route::get('/roll','ChampionController@showControls');
